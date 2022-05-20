@@ -14,7 +14,7 @@ function ConsoleForm({ console: initialConsole, notify }) {
     function handleSubmit(evt) {
         evt.preventDefault();
 
-        const url = isAdd ? "http://game-store-by-us.herokuapp.com/console" : `http://game-store-by-us.herokuapp.com/console/${console.console_id}`;
+        const url = isAdd ? "https://game-store-by-us.herokuapp.com/console" : `https://game-store-by-us.herokuapp.com/console/${console.console_id}`;
         const method = isAdd ? "POST" : "PUT";
         const expectedStatus = isAdd ? 201 : 204;
 

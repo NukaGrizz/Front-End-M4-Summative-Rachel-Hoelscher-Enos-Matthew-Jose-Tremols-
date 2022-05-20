@@ -11,7 +11,7 @@ function Consoles() {
     const [error, setError] = useState();
 
     useEffect(() => {
-        fetch("http://game-store-by-us.herokuapp.com/console")
+        fetch("https://game-store-by-us.herokuapp.com/console")
         .then(response => response.json())
         .then(result => setConsoles(result))
         .catch(console.log);

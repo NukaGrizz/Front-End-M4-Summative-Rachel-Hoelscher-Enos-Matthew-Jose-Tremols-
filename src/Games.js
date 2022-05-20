@@ -11,7 +11,7 @@ function Games() {
     const [error, setError] = useState();
 
     useEffect(() => {
-        fetch("http://game-store-by-us.herokuapp.com/game")
+        fetch("https://game-store-by-us.herokuapp.com/game")
         .then(response => response.json())
         .then(result => setGames(result))
         .catch(console.log);

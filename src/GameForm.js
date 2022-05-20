@@ -14,7 +14,7 @@ function GameForm({ game: initialGame, notify }) {
     function handleSubmit(evt) {
         evt.preventDefault();
 
-        const url = isAdd ? "http://game-store-by-us.herokuapp.com/game" : `https://game-store-by-us.herokuapp.com/game/${game.game_id}`;
+        const url = isAdd ? "https://game-store-by-us.herokuapp.com/game" : `https://game-store-by-us.herokuapp.com/game/${game.game_id}`;
         const method = isAdd ? "POST" : "PUT";
         const expectedStatus = isAdd ? 201 : 204;
 

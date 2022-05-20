@@ -11,7 +11,7 @@ function TShirts() {
     const [error, setError] = useState();
 
     useEffect(() => {
-        fetch("http://game-store-by-us.herokuapp.com/tShirt")
+        fetch("https://game-store-by-us.herokuapp.com/tShirt")
         .then(response => response.json())
         .then(result => setTShirts(result))
         .catch(console.log);
