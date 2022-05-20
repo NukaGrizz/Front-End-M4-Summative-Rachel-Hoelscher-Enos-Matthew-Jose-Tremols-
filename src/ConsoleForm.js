@@ -51,22 +51,40 @@ function ConsoleForm({ console: initialConsole, notify }) {
             <h1>{console.console_id > 0 ? "Edit" : "Add"} Console</h1>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="artist">Model</label>
-                    <input type="text" id="artist" name="artist"
+                    <label htmlFor="model">Model</label>
+                    <input type="text" id="model" name="model"
                         className="form-control"
                         value={console.model} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="album">manufacturer</label>
-                    <input type="text" id="album" name="album"
+                    <label htmlFor="manufacturer">Manufacturer</label>
+                    <input type="text" id="manufacturer" name="manufacturer"
                         className="form-control"
                         value={console.manufacturer} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="year">memory_amount</label>
-                    <input type="text" id="year" name="year"
+                    <label htmlFor="memory_amount">Memory Amount</label>
+                    <input type="text" id="memory_amount" name="memory_amount"
                         className="form-control"
                         value={console.memory_amount} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="processor">Processor</label>
+                    <input type="text" id="processor" name="processor"
+                        className="form-control"
+                        value={console.processor} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="price">Price</label>
+                    <input type="text" id="price" name="price"
+                        className="form-control"
+                        value={console.price} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity"
+                        className="form-control"
+                        value={console.quantity} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
                     <button className="btn btn-primary mr-3" type="submit">Save</button>

@@ -6,6 +6,7 @@ function ConsoleCard({ console, notify }) {
             .catch(error => notify({ action: "delete", error: error }));
     }
 
+
     return (
         <tr key={console.console_id}>
             <td>{console.model}</td>

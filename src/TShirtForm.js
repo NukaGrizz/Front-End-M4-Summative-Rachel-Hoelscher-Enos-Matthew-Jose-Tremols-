@@ -51,22 +51,34 @@ function TShirtForm({ tshirt: initialTShirt, notify }) {
             <h1>{tshirt.t_shirt_id > 0 ? "Edit" : "Add"} T-Shirt</h1>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="artist">Size</label>
-                    <input type="text" id="artist" name="artist"
+                    <label htmlFor="size">Size</label>
+                    <input type="text" id="size" name="size"
                         className="form-control"
                         value={tshirt.size} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="album">Color</label>
-                    <input type="text" id="album" name="album"
+                    <label htmlFor="color">Color</label>
+                    <input type="text" id="color" name="color"
                         className="form-control"
                         value={tshirt.color} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="year">Description</label>
-                    <input type="text" id="year" name="year"
+                    <label htmlFor="description">Description</label>
+                    <input type="text" id="description" name="description"
                         className="form-control"
                         value={tshirt.description} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="price">Price</label>
+                    <input type="text" id="price" name="price"
+                        className="form-control"
+                        value={tshirt.price} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity"
+                        className="form-control"
+                        value={tshirt.quantity} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
                     <button className="btn btn-primary mr-3" type="submit">Save</button>
