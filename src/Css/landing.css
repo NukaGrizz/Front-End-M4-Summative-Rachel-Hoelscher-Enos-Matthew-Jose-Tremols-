@@ -1,0 +1,80 @@
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:400|Inter:700,700italic");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.menu {
+  align-self: flex-end;
+  height: 366px;
+  margin-top: 1px;
+  width: 213px;
+}
+
+.ant-menu-dark .ant-menu-item-divider {
+  border-color: 
+#ffffff;
+}
+
+.ant-menu.ant-menu-dark {
+  background: 
+#151718;
+}
+
+.menu {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.button {
+  border-radius: 4px;
+  height: 36px;
+  width: 174px;
+}
+
+.games.consoles .button {
+  width: 192px;
+}
+
+.games.t-shirts .button {
+  width: 184px;
+}
+
+.button {
+  height: auto !important;
+  width: auto !important;
+}
+
+.button {
+  height: auto !important;
+  width: auto !important;
+}
+
+.button {
+  height: auto !important;
+  width: auto !important;
+}
+
+.landing-page {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 926px;
+  position: relative;
+  width: 428px;
+} */
